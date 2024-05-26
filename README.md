@@ -109,7 +109,7 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 ### Como Funciona
 
-![alt text](<sistema_recomendacao_de_produtos_por_frequencia/Captura de tela de 2024-05-25 22-02-27.png>)
+![alt text](<https://github.com/blinhares/sistema_recomendacao_de_produtos_por_frequencia/blob/0cdc274d3413c581893506c8fe7fb096b13183fc/sistema_recomendacao_de_produtos_por_frequencia/Captura%20de%20tela%20de%202024-05-25%2022-02-27.png>)
 
 
 O app tem a intenção de recomendar algo a partir do momento em que se tem algo no carrinho, logo, no campo `Adicione Produtos no Carrinho` deve-se adicionar 'produtos ao carrinho' e, como retorno o app vai mostrando, de maneira ranqueada, os produtos com maior probabilidade de serem adquiridos de acordo com as informações geradas pelo algorítimo.
