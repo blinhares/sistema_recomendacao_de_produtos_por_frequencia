@@ -71,7 +71,7 @@ Fique a vontade pra ver o código, talvez ele esclareça mais que minhas palavra
 ### Clonando Repositório
 
 ```bash
-git clone <endereco git>
+git clone https://github.com/blinhares/sistema_recomendacao_de_produtos_por_frequencia.git
 ```
 
 ### Dependências
@@ -104,7 +104,7 @@ python -m streamlit run sistema_recomendacao_de_produtos_por_frequencia/main.py
 Ou ainda melhor, pode rodar o script sem baixar como o comando:
 
 ```bash
-streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/master/streamlit_app.py
+streamlit run https://raw.githubusercontent.com/blinhares/sistema_recomendacao_de_produtos_por_frequencia/0cdc274d3413c581893506c8fe7fb096b13183fc/sistema_recomendacao_de_produtos_por_frequencia/main.py
 ```
 
 ### Como Funciona
@@ -114,4 +114,5 @@ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/
 
 O app tem a intenção de recomendar algo a partir do momento em que se tem algo no carrinho, logo, no campo `Adicione Produtos no Carrinho` deve-se adicionar 'produtos ao carrinho' e, como retorno o app vai mostrando, de maneira ranqueada, os produtos com maior probabilidade de serem adquiridos de acordo com as informações geradas pelo algorítimo.
 
-__Atenção__ : Voce vai observar que os produtos nao mostram muita distinção probabilística entre um produto e outro. Isso se da porque o computador nao possui preferencia por produtos A ou B, os carrinhos foram gerados aleatoriamente mas em um caso real essas diferenças vao ser mais significativos uma vez que o comportamento humano tende a ser mais 'tendencioso'.
+__Atenção__
+ Voce vai observar que os produtos nao mostram muita distinção probabilística entre um produto e outro. Isso se da porque o computador nao possui preferencia por produtos A ou B, os carrinhos foram gerados aleatoriamente mas em um caso real essas diferenças vao ser mais significativos uma vez que o comportamento humano tende a ser mais 'tendencioso'.
