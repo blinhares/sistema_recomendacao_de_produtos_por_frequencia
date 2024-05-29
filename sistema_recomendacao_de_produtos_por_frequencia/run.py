@@ -1,3 +1,5 @@
+#type:ignore
+
 import streamlit
 import streamlit.runtime.scriptrunner.magic_funcs
 import streamlit.web.cli as stcli
