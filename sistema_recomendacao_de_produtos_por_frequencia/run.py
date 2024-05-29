@@ -1,12 +1,23 @@
-## Add all required imports here ##
-## Eg. 
-# import cv2
-# import streamlit as st
-# import pandas
-# from recomenda_produto import RecomendaProdutos
-# import altair as alt
-##
-import subprocess
+import streamlit
+import streamlit.runtime.scriptrunner.magic_funcs
+import streamlit.web.cli as stcli
+import os, sys
 
-if __name__ == '__main__':
-    subprocess.run("streamlit run main.py")
+# Importar as Bibliotecas do Arquivo main.py
+import altair as alt
+import streamlit as st
+
+
+def resolve_path(path):
+    resolved_path = os.path.abspath(os.path.join(os.getcwd(), path))
+    return resolved_path
+
+
+if __name__ == "__main__":
+    sys.argv = [
+        "streamlit",
+        "run",
+        resolve_path("main.py"),
+        "--global.developmentMode=false",
+    ]
+    sys.exit(stcli.main())

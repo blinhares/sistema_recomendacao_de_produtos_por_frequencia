@@ -119,8 +119,44 @@ __Atenção__
 
   ![visitors](https://visitor-badge.laobi.icu/badge?page_id=blinhares.sistema_recomendacao_de_produtos_por_frequencia)
 
-## Construir um Executável
+## Construir um Executável (Extra)
+
+Construindo o arquivo run.py
 
 ```bash
-cxfreeze -c main.py
+import streamlit
+import streamlit.runtime.scriptrunner.magic_funcs
+import streamlit.web.cli as stcli
+import os, sys
+
+# Importar as Bibliotecas do Arquivo main.py
+import altair as alt
+import streamlit as st
+
+
+def resolve_path(path):
+    resolved_path = os.path.abspath(os.path.join(os.getcwd(), path))
+    return resolved_path
+
+
+if __name__ == "__main__":
+    sys.argv = [
+        "streamlit",
+        "run",
+        resolve_path("main.py"),
+        "--global.developmentMode=false",
+    ]
+    sys.exit(stcli.main())
 ```
+
+Construa o Executavel
+
+```bash
+cxfreeze --script run.py
+```
+
+Sera gerado um arquivo na pasta `build/exe.linux-x86_64-3.10` a pasta pode mudar de acordo com seu sistema operacional.
+
+Copie os arquivos do seu projeto pra junto desse executável que tera o nome de `run`.
+
+Pronto!
