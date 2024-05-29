@@ -118,3 +118,9 @@ __Atenção__
  Voce vai observar que os produtos nao mostram muita distinção probabilística entre um produto e outro. Isso se da porque o computador nao possui preferencia por produtos A ou B, os carrinhos foram gerados aleatoriamente mas em um caso real essas diferenças vao ser mais significativos uma vez que o comportamento humano tende a ser mais 'tendencioso'.
 
   ![visitors](https://visitor-badge.laobi.icu/badge?page_id=blinhares.sistema_recomendacao_de_produtos_por_frequencia)
+
+## Construir um Executável
+
+```bash
+cxfreeze -c main.py
+```
