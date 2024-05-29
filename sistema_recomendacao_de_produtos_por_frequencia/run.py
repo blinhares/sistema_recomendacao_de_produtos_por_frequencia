@@ -4,8 +4,7 @@ import streamlit.web.cli as stcli
 import os, sys
 
 # Importar as Bibliotecas do Arquivo main.py
-import altair as alt
-import streamlit as st
+import altair
 
 
 def resolve_path(path):

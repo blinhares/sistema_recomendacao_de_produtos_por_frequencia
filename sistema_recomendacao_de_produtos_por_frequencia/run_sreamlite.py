@@ -1,5 +1,5 @@
 #rodar stream lite sem o comando no terminal
-
+#nao funciona com cx_freeze
 import os
 import streamlit.web.bootstrap as st_boots
 from streamlit import config as _config
@@ -12,7 +12,6 @@ filename = os.path.join(dirname, MAIN_APP_NAME)
 _config.set_option("server.headless", True)
 args = []
 
-# streamlit.cli.main_run(filename, args)
 st_boots.run(filename,
              True, 
              args, # type: ignore
